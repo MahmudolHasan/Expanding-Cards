@@ -1,60 +1,92 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     font-family: "Roboto", serif;
     font-weight: 300;
     font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Added to stack items vertically */
     height: 100vh;
     overflow: hidden;
     margin: 0;
 }
-.container{
+
+
+.textContainer {
+    padding-bottom:0;
+    margin-bottom: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.container {
     display: flex;
     width: 100vw;
     justify-content: center;
     padding: 10px;
 }
-.panel{
+.panel {
     background-size: 100% 100%;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     height: 80vh;
     border-radius: 22px;
     color: wheat;
-    flex: .5;
+    flex: 0.5;
     margin: 8px;
     position: relative;
-    transition: flex 0.6s ease-in-out;
+    transition: all 0.6s ease-in;
     overflow: hidden;
-    
 }
-.panel h3{
+.panel h3 {
     font-size: 18px;
     font-weight: 300;
     position: absolute;
     bottom: 20px;
     left: 20px;
     opacity: 0;
+    transition: all 0.6s ease-in;
 }
-/* .panel .active:hover,.panel .active:hover{
-    flex: auto;
-} */
-.panel.active:hover{
-    flex:1;
+.panel:hover, .panel.active{
+    flex: 1;
 }
-.panel.active:hover h3{
+.panel:hover h3, .panel.active h3{
     opacity: 1;
-} 
+}
 
-@media (max-width: 400px){
-    .container{
-        width:100vh;
+@media (max-width: 400px) {
+    .container {
+        width: 100vh;
     }
-    .panel:nth-of-type(4),.panel:nth-of-type(5){
+    .panel:nth-of-type(4), .panel:nth-of-type(5) {
         display: none;
     }
 }
+.neon {
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    color: #096921;
+    font-size: 15px;
+  }
+  .neon .span{
+    letter-spacing: 15px;
+  }
+  
+  
+  
+  .neon span.delay {
+    animation: flicker 1.5s infinite alternate;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0;
+    }
+  }
