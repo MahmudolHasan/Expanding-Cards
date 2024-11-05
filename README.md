@@ -6,6 +6,6 @@ In this project, there are five cards, each showcasing a unique natural backgrou
 I've made a few adjustments to the original design. Rather than clicking to expand a panel, you can now simply hover over a card to enlarge it. I also added a flickering animation effect to the title for a bit of extra style. Feel free to check out the live [live demo.](https://mahmudolhasan.github.io/Expanding-Cards/)
 
 ## Sample 
-![Demo of Expanding Cards](https://jmp.sh/1ePed0Qx)
+[Demo of Expanding Cards](demo.gif)
 
 
