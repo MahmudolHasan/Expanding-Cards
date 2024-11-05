@@ -38,7 +38,7 @@ body {
     flex: 0.5;
     margin: 8px;
     position: relative;
-    transition: all 0.6s ease-in;
+    transition: all 0.5s ease-in;
     overflow: hidden;
 }
 .panel h3 {
@@ -48,7 +48,7 @@ body {
     bottom: 20px;
     left: 20px;
     opacity: 0;
-    transition: all 0.6s ease-in;
+    transition: all 0.5s ease-in;
 }
 .panel:hover, .panel.active{
     flex: 1;
@@ -68,18 +68,17 @@ body {
 .neon {
     text-transform: uppercase;
     letter-spacing: 25px;
-    color: #096921;
+    color: #218f3c;
     font-size: 15px;
   }
-  .neon .span{
-    letter-spacing: 15px;
-  }
+  
   
   
   
   .neon span.delay {
     animation: flicker 1.5s infinite alternate;
     animation-delay: calc(0.1s * var(--i));
+    letter-spacing: 25px;
   }
   
   @keyframes flicker {

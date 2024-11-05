@@ -1,4 +1,11 @@
-Expanding Cards
-This project is part of a [course.](https://50projects-50-days.netlify.app/)
+# Expanding Cards
+This project is part of the [course.](https://50projects-50-days.netlify.app/)
 
-I made a few adjustments to the original design. Instead of clicking an element to expand the panel, you can now hover over it to enlarge the view. I also added a title with a flicker animation effect for added style. Feel free to check out the [live demo.](https://mahmudolhasan.github.io/Expanding-Cards/)
+In this project, there are five cards, each showcasing a unique natural background. Hovering over a card expands it, providing a more detailed view of the image. A suitable title also appears in the bottom-left corner of each card.
+
+I've made a few adjustments to the original design. Rather than clicking to expand a panel, you can now simply hover over a card to enlarge it. I also added a flickering animation effect to the title for a bit of extra style. Feel free to check out the live [live demo.](https://mahmudolhasan.github.io/Expanding-Cards/)
+
+## Sample 
+![Demo of Expanding Cards](https://jmp.sh/1ePed0Qx)
+
+
